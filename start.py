@@ -8,9 +8,10 @@ except IOError:
     print ("There was an error writing to", file_name)
     sys.exit()
 file_finish = "1"
+file_text = ""
 print ("Enter '",file_finish,"' When finished")
 while file_text != file_finish:
-    file_text = raw_input("Enter text: ")
+    file_text = input("Enter text: ")
     if file_text == file_finish:
         # close the file
         file.close
@@ -18,8 +19,8 @@ while file_text != file_finish:
     file.write(file_text)
     file.write("\n")
 file.close()
-file_name = raw_input("Enter filename: ")
-if len(file_name) == 0:
+filename = input("Enter filename: ")
+if len(filename) == 0:
     print ("Next time please enter something")
     sys.exit()
 try:
