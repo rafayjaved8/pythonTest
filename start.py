@@ -26,7 +26,7 @@ if len(filename) == 0:
 try:
     file = open(filename,"r")
 except IOError:
-    print ("There was an errir reading file")
+    print ("There was an error in reading file")
     sys.exit()
 file_text = file.read()
 file.close
