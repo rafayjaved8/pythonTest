@@ -37,3 +37,16 @@ else:
     print (var2)
 
 print('end if-else')
+
+
+# Nested If
+
+var1 = 170
+if var1 < 300:
+    print ('Its below 300')
+    if var1 < 100:
+        print ('Its below 100')
+    if var1 < 200:
+        print ('Its below 200')
+else:
+    print ('Its over 300')
